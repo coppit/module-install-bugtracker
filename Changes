@@ -1,13 +1,10 @@
-Revision history for Perl extension Module-Install-Bugtracker
-
 Version 0.0300: Sun Apr 26 2015
+- Fix 03_podspell.t for author names
 - Move to X.YYZZ versioning. ZZ for bugs, YY for features, X for major or
   API-breaking changes
 - Add DEVELOPERNOTES
 - Start github repo based on 0.02. Marcel says that he lost the original repo
   years ago.
-
-0.03
 
 0.02 Sun 2010.02.07 16:35:54 CET (Marcel Gruenauer <marcel@cpan.org>)
      - fixed bugtracker URL
