@@ -1,0 +1,29 @@
+This file is not distributed with the module. It outlines some notes for
+developers readying a set of files for distribution.
+
+Check for any open issues:
+- https://rt.cpan.org/Public/Dist/Display.html?Name=Module-Install-Bugtracker
+
+git checkout:
+$ git clone https://github.com/coppit/module-install-bugtracker.git
+
+Checklist for a release:
+- Be sure to add new test cases for new features
+- Make sure version number increases.
+- Add version changes to CHANGES
+- Add new module dependencies to Makefile.PL, and update README
+- Update MANIFEST and MANIFEST.SKIP if necessary.
+  $ make distcheck
+- Test your distribution:
+  $ make disttest
+- Make the distribution file:
+  $ make dist
+- Install the distribution file elsewhere to test it.
+- Upload to CPAN:
+    http://pause.perl.org/pause/authenquery
+  or
+    cpan-upload Module-Install-CheckOptional-X.XX.tar.gz
+- Tag the release for easy retrieval later
+  $ git tag -a v0.0300 -m 'Version 0.0300'
+- Push changes to github:
+  $ git push
