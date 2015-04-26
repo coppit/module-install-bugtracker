@@ -22,7 +22,7 @@ Checklist for a release:
 - Upload to CPAN:
     http://pause.perl.org/pause/authenquery
   or
-    cpan-upload Module-Install-CheckOptional-X.XX.tar.gz
+    cpan-upload Module-Install-Bugtracker-X.XX.tar.gz
 - Tag the release for easy retrieval later
   $ git tag -a v0.0300 -m 'Version 0.0300'
 - Push changes to github:
