@@ -3,8 +3,9 @@ use 5.006;
 use strict;
 use warnings;
 use URI::Escape;
-our $VERSION = '0.02';
 use base qw(Module::Install::Base);
+
+our $VERSION = sprintf "%d.%02d%02d", q/0.10.43/ =~ /(\d+)/g;
 
 sub auto_set_bugtracker {
     my $self = shift;
@@ -76,7 +77,7 @@ infrastructure.
 
 =head1 AUTHORS
 
-David Coppit, C<< <david@coppit.org> >
+David Coppit, C<< <david@coppit.org> >>
 
 Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
 
