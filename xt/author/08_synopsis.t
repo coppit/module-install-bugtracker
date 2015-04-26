@@ -2,4 +2,4 @@
 use warnings;
 use strict;
 use Test::Synopsis;
-all_synopsis_ok('lib');
+all_synopsis_ok();

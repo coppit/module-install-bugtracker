@@ -1,4 +1,5 @@
 Version 0.0300: Sun Apr 26 2015
+- Fix odd elements warning in 08_synopsis.t
 - Fix 03_podspell.t for author names
 - Move to X.YYZZ versioning. ZZ for bugs, YY for features, X for major or
   API-breaking changes
