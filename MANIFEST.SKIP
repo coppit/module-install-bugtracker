@@ -1,0 +1,32 @@
+# Version control files and dirs.
+\bRCS\b
+\bCVS\b
+,v$
+\B\.svn\b
+\B\.git\b
+^\.gitignore$
+
+# Makemaker generated files and dirs.
+^MANIFEST\.
+^Makefile$
+^Makefile\.old$
+^blib/
+^pm_to_blib$
+^MakeMaker-\d
+
+# Temp, old, emacs backup, and vim swap files.
+~$
+\.old$
+\.bak$
+^#.*#$
+^\.#
+\..*\.swp$
+
+# Other stuff
+^todo$
+^DEVELOPERNOTES$
+^announce.sample$
+^old/
+\.tar\.gz$
+^MYMETA.(json|yml)
+
