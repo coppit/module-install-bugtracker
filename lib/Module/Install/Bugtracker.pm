@@ -85,8 +85,10 @@ Marcel GrE<uuml>nauer, C<< <marcel@cpan.org> >>
 
 Copyright 2015, David Coppit. Prior versions copyright Marcel GrE<uuml>nauer.
 
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
+This library is free software; you can redistribute it and/or modify it under
+the same terms as Perl itself. See the file LICENSE in the distribution for
+details.
+
 
 =head1 SEE ALSO
 

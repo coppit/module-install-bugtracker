@@ -1,4 +1,12 @@
+#!/usr/bin/perl
+
+use strict;
+
+# For PRIVATE Module::Install extensions
+use lib 'private-lib';
+
 use inc::Module::Install;
+
 include 'Module::AutoInstall';
 name 'Module-Install-Bugtracker';
 all_from 'lib/Module/Install/Bugtracker.pm';
@@ -29,4 +37,8 @@ author_requires 'Test::Portability::Files';
 author_requires 'Test::Synopsis';
 auto_install;
 auto_include;
+auto_license(holder => 'David Coppit');
+
+enable_verbose_cpan_testing();
+
 WriteAll;
