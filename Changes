@@ -1,0 +1,8 @@
+Revision history for Perl extension Module-Install-Bugtracker
+
+0.02 Sun 2010.02.07 16:35:54 CET (Marcel Gruenauer <marcel@cpan.org>)
+     - fixed bugtracker URL
+     - now uses uri_escape() for distribution name in URL
+
+0.01 Mon Sep  7 17:43:43 MSZ 2009 (Marcel Gruenauer <marcel@cpan.org>)
+     - original version

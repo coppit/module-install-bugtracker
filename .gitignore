@@ -1,0 +1,9 @@
+/blib/
+inc/
+/Makefile
+/LICENSE
+/META.yml
+/MYMETA.*
+/pm_to_blib
+/Module-Install-Bugtracker-*.tar.gz
+**/*.swp
