@@ -3,6 +3,7 @@ LICENSE
 INSTALL
 MANIFEST
 Makefile.PL
+TODO
 
 # The module files
 lib/Module/Install/Bugtracker.pm
