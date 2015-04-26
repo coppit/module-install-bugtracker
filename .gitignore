@@ -4,6 +4,8 @@ inc/
 /LICENSE
 /META.yml
 /MYMETA.*
+/README
+/README.mkdn
 /pm_to_blib
 /Module-Install-Bugtracker-*.tar.gz
 **/*.swp
