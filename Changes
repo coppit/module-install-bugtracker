@@ -1,4 +1,10 @@
 Version 0.0300: Sun Apr 26 2015
+- Clarified the documentation that the URLs are CPAN bug tracker URLs.
+  https://rt.cpan.org/Ticket/Display.html?id=70912. Thanks to
+  Florent Angly <florent.angly@gmail.com> for the bug report.
+- Dynamically specify that configure_reauires 'URI::Escape', so that users of
+  this module don't have to.
+- Enable verbose CPAN testers testing
 - Fix odd elements warning in 08_synopsis.t
 - Fix 03_podspell.t for author names
 - Move to X.YYZZ versioning. ZZ for bugs, YY for features, X for major or

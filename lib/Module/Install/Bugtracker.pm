@@ -5,11 +5,13 @@ use warnings;
 use URI::Escape;
 use base qw(Module::Install::Base);
 
-our $VERSION = sprintf "%d.%02d%02d", q/0.10.43/ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d%02d", q/0.3.0/ =~ /(\d+)/g;
 
 sub auto_set_bugtracker {
     my $self = shift;
     if ($self->name) {
+        $self->configure_requires('URI::Escape', 0);
+
         $self->bugtracker(
             sprintf 'http://rt.cpan.org/Public/Dist/Display.html?Name=%s',
             uri_escape($self->name),
@@ -28,7 +30,7 @@ sub auto_set_bugtracker () {}
 
 =head1 NAME
 
-Module::Install::Bugtracker - automatically sets the bugtracker URL
+Module::Install::Bugtracker - A Module::Install extension that automatically sets the CPAN bugtracker URL
 
 =head1 SYNOPSIS
 
@@ -41,6 +43,9 @@ Module::Install::Bugtracker - automatically sets the bugtracker URL
 
 This is a plugin for L<Module::Install> to automatically set the bugtracker URL
 via C<bugtracker()> which will then be added to resources under I<META.yml>.
+
+At present this module only support CPAN bug trackers, resulting in links such
+as https://rt.cpan.org/Dist/Display.html?Name=Module-Install-Bugtracker
 
 =head1 FUNCTIONS
 
@@ -55,10 +60,8 @@ C<name()> needs to be set before calling this function.
 
 =head1 BUGS AND LIMITATIONS
 
-No bugs have been reported.
-
 Please report any bugs or feature requests through the web interface at
-L<http://rt.cpan.org>.
+L<https://rt.cpan.org/Dist/Display.html?Name=Module-Install-Bugtracker>.
 
 =head1 INSTALLATION
 
@@ -71,7 +74,7 @@ Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
 site near you. Or see L<http://search.cpan.org/dist/Module-Install-Bugtracker/>.
 
 The development version lives at
-L<http://github.com/hanekomu/module-install-bugtracker/>. Instead of sending
+L<http://github.com/coppit/module-install-bugtracker/>. Instead of sending
 patches, please fork this project using the standard git and github
 infrastructure.
 
