@@ -17,7 +17,10 @@ auto_set_bugtracker;
 auto_set_repository;
 requires 'Module::Install';
 requires 'URI::Escape';
-test_requires 'Test::More' => '0.70';
+test_requires(
+  'Test::Builder::Module' => '1.001002',
+  'Test::More' => '1.001002',
+);
 extra_tests;
 author_requires 'ShipIt';
 author_requires 'ShipIt::Step::DistClean';

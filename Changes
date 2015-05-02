@@ -1,5 +1,8 @@
 Version 0.0301:
 - Prevent CPAN from indexing private-lib
+- Add Test::Module::Builder dependency in an attempt to fix local module
+  incompatibilities with inc/Test/More.pm
+  http://www.cpantesters.org/cpan/report/19eb410c-bf6d-1014-a84f-b9092b825c07
 
 Version 0.0300: Sun Apr 26 2015
 - Clarified the documentation that the URLs are CPAN bug tracker URLs.
