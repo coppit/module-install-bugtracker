@@ -39,6 +39,8 @@ auto_install;
 auto_include;
 auto_license(holder => 'David Coppit');
 
+no_index 'directory' => 'private-lib';
+
 enable_verbose_cpan_testing();
 
 WriteAll;

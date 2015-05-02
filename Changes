@@ -1,3 +1,6 @@
+Version 0.0301:
+- Prevent CPAN from indexing private-lib
+
 Version 0.0300: Sun Apr 26 2015
 - Clarified the documentation that the URLs are CPAN bug tracker URLs.
   https://rt.cpan.org/Ticket/Display.html?id=70912. Thanks to
