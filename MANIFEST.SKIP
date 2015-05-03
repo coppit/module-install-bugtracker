@@ -29,4 +29,3 @@
 ^old/
 \.tar\.gz$
 ^MYMETA.(json|yml)
-
