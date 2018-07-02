@@ -1,3 +1,7 @@
+Version 0.0302:
+- Fix compatibility issue with newer versions of perl, which remove "." from
+  @INC.
+
 Version 0.0301: Sat May 2 2015
 - Prevent CPAN from indexing private-lib
 - Add Test::Module::Builder dependency in an attempt to fix local module
