@@ -26,7 +26,9 @@ Checklist for a release:
     http://pause.perl.org/pause/authenquery
   or
     cpan-upload Module-Install-Bugtracker-X.XX.tar.gz
+- Make sure there are no uncommitted changes:
+  git status
 - Tag the release for easy retrieval later
-  $ git tag -a v0.0300 -m 'Version 0.0300'
+  git tag -a v0.0300 -m 'Version 0.0300'
 - Push changes to github:
-  $ git push
+  git push
