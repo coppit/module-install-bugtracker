@@ -1,6 +1,7 @@
 Version 0.0305:
 - Use include_deps to help Module::Install find dependencies like URI::Escape
   and include them in the distros.
+- Remove unnecessary files in inc/ in an attempt to fix CPAN testers errors.
 
 Version 0.0304:
 - Updating META.yml

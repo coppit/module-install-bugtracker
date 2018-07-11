@@ -19,7 +19,6 @@ auto_set_repository;
 requires 'Module::Install';
 requires 'URI::Escape';
 test_requires(
-  'Test::Builder::Module' => '1.001002',
   'Test::More' => '1.001002',
 );
 
@@ -32,15 +31,13 @@ author_requires 'Test::Pod';
 author_requires 'Test::Spelling';
 author_requires 'Pod::Wordlist::hanekomu';
 author_requires 'Test::Pod::Coverage';
-
-test_requires 'Test::Kwalitee';
-
-# author_requires 'Test::Kwalitee';  # # Attempt to free unreferenced scalar
+#author_requires 'Test::Kwalitee';  # # Attempt to free unreferenced scalar
 author_requires 'Test::YAML::Meta';
 author_requires 'Test::Portability::Files';
 author_requires 'Test::Synopsis';
+
 auto_install;
-auto_include;
+
 auto_license(holder => 'David Coppit');
 
 no_index 'directory' => 'private-lib';
