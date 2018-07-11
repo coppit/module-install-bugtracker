@@ -1,3 +1,7 @@
+Version 0.0305:
+- Use include_deps to help Module::Install find dependencies like URI::Escape
+  and include them in the distros.
+
 Version 0.0304:
 - Updating META.yml
 - Remove ShipIt dependencies. They don't seem to be necessary, and aren't
