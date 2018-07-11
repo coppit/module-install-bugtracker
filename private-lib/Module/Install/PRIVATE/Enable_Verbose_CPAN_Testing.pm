@@ -22,7 +22,11 @@ sub enable_verbose_cpan_testing {
   # Tell Module::Install to include this, since we use it.
   $self->perl_version('5.005');
   $self->include_deps('Module::Install::AutomatedTester', 0);
-  require Module::Install::AutomatedTester;
+
+  # Avoid subroutine redefined errors
+  if (!defined(&Module::Install::AutomatedTester::auto_tester)) {
+    require Module::Install::AutomatedTester;
+  }
 
   return unless Module::Install::AutomatedTester::auto_tester();
 
