@@ -13,10 +13,12 @@ Checklist for a release:
 - Make sure version number increases.
 - Add version changes to CHANGES
 - Add new module dependencies to Makefile.PL, and update README
+- Make sure there are no uncommitted changes:
+  git status
 - Clean and test:
-  make realclean
+  make realclean; rm -rf inc META.yml # To force rebuild the META.yml
   perl Makefile.PL
-  make test
+  make test TEST_AUTHOR=1
   make distcheck # Update MANIFEST and MANIFEST.SKIP if necessary.
   make disttest
 - Make the dist:
@@ -26,9 +28,7 @@ Checklist for a release:
     http://pause.perl.org/pause/authenquery
   or
     cpan-upload Module-Install-Bugtracker-X.XX.tar.gz
-- Make sure there are no uncommitted changes:
-  git status
 - Tag the release for easy retrieval later
-  git tag -a v0.0300 -m 'Version 0.0300'
+  git tag -a v0.0304 -m 'Version 0.0304'
 - Push changes to github:
   git push

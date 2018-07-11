@@ -46,6 +46,7 @@ inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
 inc/Pod/Markdown.pm
 inc/Test/Builder/Module.pm
+inc/Test/Kwalitee.pm
 inc/Test/More.pm
 
 # Private Module::Install extensions

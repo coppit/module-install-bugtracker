@@ -23,17 +23,14 @@ test_requires(
   'Test::More' => '1.001002',
 );
 extra_tests;
-author_requires 'ShipIt';
-author_requires 'ShipIt::Step::DistClean';
-author_requires 'ShipIt::Step::DistTestExtra';
-author_requires 'ShipIt::Step::Manifest';
-author_requires 'ShipIt::Step::Twitter';
 author_requires 'Test::Compile';
 author_requires 'Test::Perl::Critic';
 author_requires 'Test::Pod';
 author_requires 'Test::Spelling';
 author_requires 'Pod::Wordlist::hanekomu';
 author_requires 'Test::Pod::Coverage';
+
+test_requires 'Test::Kwalitee';
 
 # author_requires 'Test::Kwalitee';  # # Attempt to free unreferenced scalar
 author_requires 'Test::YAML::Meta';
@@ -46,6 +43,8 @@ auto_license(holder => 'David Coppit');
 no_index 'directory' => 'private-lib';
 
 enable_verbose_cpan_testing();
+
+clean_files('t/inc');
 
 WriteAll;
 
