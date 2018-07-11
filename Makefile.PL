@@ -22,7 +22,10 @@ test_requires(
   'Test::Builder::Module' => '1.001002',
   'Test::More' => '1.001002',
 );
+
+use_standard_tests;
 extra_tests;
+
 author_requires 'Test::Compile';
 author_requires 'Test::Perl::Critic';
 author_requires 'Test::Pod';
@@ -44,7 +47,7 @@ no_index 'directory' => 'private-lib';
 
 enable_verbose_cpan_testing();
 
-clean_files('t/inc');
+realclean_files('inc');
 
 WriteAll;
 
@@ -73,5 +76,3 @@ WriteAll;
       /);
   }
 }
-
-use_standard_tests;
