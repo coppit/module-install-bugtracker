@@ -17,7 +17,12 @@ auto_set_homepage;
 auto_set_bugtracker;
 auto_set_repository;
 requires 'Module::Install';
+
+# Perl 5.6 doesn't work with URI::Escape. We get an error about Exporter not exporting "import"
+perl_version '5.008';
+
 requires 'URI::Escape';
+
 test_requires(
   'Test::More' => '1.001002',
 );

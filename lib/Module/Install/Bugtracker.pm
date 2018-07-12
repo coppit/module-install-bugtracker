@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use base qw(Module::Install::Base);
 
-our $VERSION = sprintf "%d.%02d%02d", q/0.3.5/ =~ /(\d+)/g;
+our $VERSION = sprintf "%d.%02d%02d", q/0.3.6/ =~ /(\d+)/g;
 
 sub auto_set_bugtracker {
     my $self = shift;
